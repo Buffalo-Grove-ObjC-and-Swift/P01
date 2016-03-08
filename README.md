@@ -7,6 +7,9 @@ OS: iOS 9
 Description:
 This is an MVP of a specific multi-player dice game. The way the game is played is as follows. Each player takes turns rolling dice to accrue points (more on this later). Play continues until a player captures a total of 100 points or more. When a player has exceeded 100 points, every other player gets one more final turn to try and get the highest score they can. At the end of this final round, the player with the highest points is declared the winner.
 
+# Wiki for the dev team
+* [Please read the Wiki](https://github.com/Buffalo-Grove-ObjC-and-Swift/P01/wiki "Wiki") 
+
 Equipment: 
 -10 dice. These dice are six sided. The sides of the dice are as follows: 3 Green sides, 2 Yellow sides, 1 Red side. It is assumed these dice are balanced, with equally random outcomes.
 -2 or more players (it is right to call a player "equipment"?)
