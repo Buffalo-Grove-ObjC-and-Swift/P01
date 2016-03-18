@@ -12,11 +12,12 @@ var diceLeft = numberOfDice
 //Couple of Helper Methods below
 func rollDice(numberOfDice:Int) -> [Dice] {
     var diceRolled = [Dice]()
-    let colorArray: [String] = ["red", "yellow", "yellow", "green", "green", "green"]
+    let colorArray: [String] = ["❤️", "💛", "💛", "💚", "💚", "💚"]
     for _ in 1...numberOfDice {
         let diceRoll = Int(arc4random_uniform(6))
         let currentDice = Dice(upSideColor: colorArray[diceRoll])
         diceRolled.append(currentDice)
+        print(currentDice.upSideColor, terminator:"")
     }
     return diceRolled
 }
@@ -25,10 +26,10 @@ func calculateRollScore (diceRolled:[Dice]) -> Int {
     var rollScore = 0
     var redDicePresent = false
     for dice in diceRolled {
-        if dice.upSideColor=="green" {
+        if dice.upSideColor=="💚" {
             rollScore++
             diceLeft--
-        } else if dice.upSideColor=="red" {
+        } else if dice.upSideColor=="❤️" {
             redDicePresent = true
         }
     }
